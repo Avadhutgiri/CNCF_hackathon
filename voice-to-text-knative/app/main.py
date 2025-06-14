@@ -16,7 +16,7 @@ model = Model(MODEL_PATH)
 
 app = FastAPI()
 
-@app.post("/", response_class=JSONResponse)
+@app.post("/audio-to-text", response_class=JSONResponse)
 async def transcribe_audio(file: UploadFile = File(...)):
     if not file.filename.lower().endswith((".wav", ".mp3")):
         raise HTTPException(status_code=400, detail="Only .wav or .mp3 files are supported.")
