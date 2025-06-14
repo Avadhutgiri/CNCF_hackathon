@@ -1,3 +1,4 @@
+# Python
 venv-cncf/
 __pycache__/
 *.pyc
@@ -9,3 +10,26 @@ venv/
 .env
 *.log
 vosk-model-small-en-us-0.15.zip
+
+# Frontend
+node_modules/
+dist/
+build/
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# # Build outputy
