@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: voice-to-text
+spec:
+  template:
+    spec:
+      containers:
+        - image: voice-to-text-knative:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "1Gi"
+            requests:
+              memory: "512Mi" 

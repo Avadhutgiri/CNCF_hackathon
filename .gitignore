@@ -1,0 +1,11 @@
+venv-cncf/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.log
+vosk-model-small-en-us-0.15.zip
