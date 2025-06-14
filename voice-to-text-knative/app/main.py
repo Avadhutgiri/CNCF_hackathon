@@ -15,6 +15,9 @@ if not os.path.exists(MODEL_PATH):
 model = Model(MODEL_PATH)
 
 app = FastAPI()
+@app.get("/ready")
+async def ready():
+    return {"status": "OK", "message": "Ready"}
 
 @app.post("/audio-to-text", response_class=JSONResponse)
 async def transcribe_audio(file: UploadFile = File(...)):

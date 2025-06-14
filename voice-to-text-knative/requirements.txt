@@ -16,3 +16,4 @@ pydantic_core==2.33.2
 pydub==0.25.1
 uvicorn[standard]==0.29.0 
 python-multipart
+vosk

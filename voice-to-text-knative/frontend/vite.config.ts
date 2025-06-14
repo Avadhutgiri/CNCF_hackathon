@@ -6,10 +6,9 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://34.172.127.192:80',
+      '/audio-to-text': {
+        target: 'http://cncf-app.default.34.133.14.153.sslip.io',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "http://34.172.127.192:80/:path*"
+      "source": "/audio-to-text",
+      "destination": "http://cncf-app.default.34.133.14.153.sslip.io/audio-to-text"
     }
   ]
 } 

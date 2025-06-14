@@ -48,7 +48,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('/api', {
+      const response = await fetch('/audio-to-text', {
         method: 'POST',
         body: formData,
       });
